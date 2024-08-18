@@ -1,0 +1,22 @@
+{
+  "name": "ctanii",
+  "version": "1.1.1",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "build": "rimraf ./dist && tsc",
+    "prepublishOnly": "npm run build"
+  },
+  "devDependencies": {
+    "@types/node": "^22.4.0",
+    "@types/ws": "^8.5.12",
+    "rimraf": "^3.0.2",
+    "typescript": "^4.9.5"
+  },
+  "dependencies": {
+    "@types/open": "^6.1.0",
+    "open": "^10.1.0",
+    "ts-node": "^10.9.2",
+    "ws": "^8.18.0"
+  }
+}
